@@ -1,8 +1,3 @@
-* {
-  box-sizing: content-box;
-  margin: 0 0 0 0;
-}
-
 :root {
   --dark: rgb(12, 27, 54);
   --header: rgb(0, 19, 70);
@@ -65,4 +60,25 @@ nav ul {
 
 .article-2 img {
   max-width: 100%;
+}
+
+
+.nav-ul {
+  padding: 0px 0px 0px 0px;
+  margin-left: 0px;
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  background-color: var(--white);
+  color: var(--black);
+  text-align: var(--center);
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--black)
+}
+
+.border-bottom {
+  border-bottom: solid black 1px;
 }
