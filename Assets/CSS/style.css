@@ -36,7 +36,17 @@ nav ul {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
-  min-width: 160px;
+  max-width: 100%;
+}
+
+.article-links {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.me {
+  max-width: 100%;
+  border: solid black 1px;
 }
 
 .article-1 {
@@ -58,8 +68,9 @@ nav ul {
   align-items: center;
 }
 
-.article-2 img {
+.screenshot {
   max-width: 100%;
+  border: solid black 1px;
 }
 
 
