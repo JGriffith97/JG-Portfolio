@@ -4,8 +4,10 @@
   --white: white;
   --black: black;
   --center: center;
+  --link: cornflowerblue;
 }
 
+/* All below is mobile-first */
 body {
   display: flex;
   flex-direction: column;
@@ -21,12 +23,11 @@ main {
 header {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: var(--center);
   padding: 1.4%;
   background-color: var(--header);
   color: var(--white);
 }
-
 
 h1 {
   font-size: 24px;
@@ -34,14 +35,30 @@ h1 {
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   font-size: 20px;
   max-width: 100%;
 }
 
 .article-links {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 900;
+}
+
+.article-links:link {
+  color: var(--link);
+}
+
+.article-links:visited {
+  color: var(--link);
+}
+
+.article-links:hover {
+  color: red
+}
+
+.article-links:active {
+  color: orange
 }
 
 .me {
@@ -50,25 +67,24 @@ nav ul {
 }
 
 .article-1 {
-  padding: 10px 0 10px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   background-color: lightblue;
   color: var(--black)
 }
 
-.article-2 {
+.module-1 {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  text-align: var(--center);
 }
 
-.p-2 {
-  padding: 5px 0px 10px 0px;
-  align-items: center;
+.p-1, .p-2 {
+  padding: 5px 5px 5px 5px;
 }
 
 .screenshot {
+  display: flex;
   max-width: 100%;
   border: solid black 1px;
 }
@@ -92,4 +108,53 @@ nav ul {
 
 .border-bottom {
   border-bottom: solid black 1px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+
+  .me {
+    max-width: 50%;
+  }
+
+  .p-1, .p-2 {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0px 80px 0px 80px
+  }
+
+  .article-1  {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .module-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  } 
+
+  .screenshot {
+    max-width: 50%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+  .me {
+    max-width: 33%;
+  }
+
+  .p-1, .p-2 {
+    padding: 0 250px 0 250px
+  }
+
+  .screenshot {
+    max-width: 33%;
+ }
 }
