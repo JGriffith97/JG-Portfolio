@@ -91,7 +91,7 @@ h1 {
 .me {
   max-width: 100%;
   border: solid black 1px;
-  border-top: 0px;
+  border-top: 1px;
 }
 
 .article-1 {
@@ -101,13 +101,18 @@ h1 {
   color: var(--black)
 }
 
-.module-1 {
+.content {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
 }
 
-.p-1, .p-2 {
+.content-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-1 {
   font-size: 20px;
   padding: 5px 5px 5px 5px;
 }
@@ -169,22 +174,23 @@ footer {
   }
 
   .me {
-    border-top: 0px;
     max-width: 50%;
+    border-top: solid black 1px;
   }
 
   .p-1{
-    align-items: center;
-    justify-content: center;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
   }
 
   .article-1  {
     flex-direction: column;
     align-items: center;
-    padding: 40px 50px 0px 50px
+    padding: 30px 50px 0px 50px
   }
 
-  .module-1 {
+  .content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -194,7 +200,6 @@ footer {
   .screenshot {
     max-width: 80%;
     margin-top: 3%;
-    margin-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -230,18 +235,44 @@ footer {
 
   .me {
     border-top: solid black 1px;
-    max-width: 60%;
+    max-width: 45%;
   }
 
   .p-1 {
-    padding: 40px 50px 40px 50px;
+    padding: 20px;
     text-align: justify;
   }
 
   .screenshot {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .placeholder-img {
+    margin: 2% 0px 2% 0px;
+    border: solid lightblue 20px;
+    width: 49%;
+  }
+
+  .placeholder-2 {
+    margin: 2% 0px 2% 0px;  /* Top Right Bottom Left */
+    border: solid lightblue 20px;
+    width: 49%;
+  }
+
+  .ancestor {
+    background-color: var(--link);
+    padding: 0% 20% 0% 20%;
   }
 
   .git {

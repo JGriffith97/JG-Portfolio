@@ -15,14 +15,14 @@
   </header>
 
   <nav class="flex-container">
-    <a class="flex-2" href="#bio">
+    <a class="flex-1" href="#about">
       <div class="flex-1">
-        Bio
+        About
       </div>
     </a>
-    <a class="flex-2" href="#module-1">
+    <a class="flex-2" href="#projects">
       <div class="flex-2">
-        Module 1
+        Projects
       </div>
     </a>
   </nav>
@@ -30,7 +30,7 @@
   <main>
     <div class="flex-container-2">
       <div class="article-1">
-        <img class="me" src="./Assets/Images/me.jpg" alt="Me, Jayden Griffith">
+        <img class="me" id="about" src="./Assets/Images/me.jpg" alt="Me, Jayden Griffith">
           <article id="bio" class="p-1">
             Hello, my name is Jayden Griffith, currently a student of the University of Utah's Coding Bootcamp. Which I officially started in 
             April of 2022.
@@ -38,11 +38,17 @@
       </div>
     </div>
 
-    <div class="flex-ctr-3">
-      <div class="module-1">
-        <img class="screenshot" src="./Assets/Images/Screenshot-edit.png" alt="Screenshot of the Module 1 Challenge code refactor" class="float-left" />
+      <div class="ancestor" id="projects">
+        <div class="column">
+          <img class="screenshot" src="./Assets/Images/Screenshot-edit.png" alt="Screenshot of the Module 1 Challenge code refactor"/>
+          <!-- I'm using this as kind of a 'proof of function' placeholder -->
+        </div>
+
+        <div class="row">
+          <img class="placeholder-img" src="./Assets/Images/Placeholder-480x480.png" alt="Placeholder"/>
+          <img class="placeholder-2" src="./Assets/Images/Placeholder-480x480.png" alt="Placeholder 2"/>
+        </div>
       </div>
-    </div>
   </main>
 
   <footer class="ftflex-container">
