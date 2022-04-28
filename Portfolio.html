@@ -14,20 +14,21 @@
     <h1>Jayden Griffith's Portfolio</h1>
   </header>
 
-  <nav>
-      <div class="nav">
-        <ul class="nav-ul">
-          <li class="border-bottom">
-            <a class="nav-links" href="#bio">Bio</a>
-          </li>
-          <li>
-            <a class="nav-links" href="#module-1">Module 1</a>
-          </li>
-        </ul>
+  <nav class="flex-container">
+    <a class="flex-2" href="#bio">
+      <div class="flex-1">
+        Bio
       </div>
+    </a>
+    <a class="flex-2" href="#module-1">
+      <div class="flex-2">
+        Module 1
+      </div>
+    </a>
   </nav>
 
   <main>
+    <div class="flex-container-2">
       <div class="article-1">
         <img class="me" src="./Assets/Images/me.jpg" alt="Me, Jayden Griffith">
           <article id="bio" class="p-1">
@@ -35,28 +36,27 @@
             April of 2022.
           </article>
       </div>
+    </div>
+
+    <div class="flex-ctr-3">
       <div class="module-1">
         <img class="screenshot" src="./Assets/Images/Screenshot-edit.png" alt="Screenshot of the Module 1 Challenge code refactor" class="float-left" />
-          <article id="#module-1" class="p-2">
-            As a part of our first assignment, we were tasked with refactoring the code of an existing repository to improve accessiblility.
-            Click <a class="article-links" href="https://github.com/JGriffith97/Module-1-Challenge" title="Github for this project" target="_blank">HERE</a> to view this project on Github.
-          </article>
       </div>
+    </div>
   </main>
 
-  <footer>
-    <ul class="footer-refs">
-      <li>
+  <footer class="ftflex-container">
+    <div class="footer-refs-1">
         <a class="reference" href="https://github.com/JGriffith97">
           <img class="git" src="./Assets/Images/Reference-icons/GitHub_Logo_White.png"/>
         </a> 
-      </li>
-      <li>
+    </div>
+    <div class="footer-refs-2">
         <a class="reference" href="https://www.linkedin.com/in/jayden-griffith-a3b7b9217/">
           <img class="in" src="./Assets/Images/Reference-icons/LI-In-Bug.png"/>
         </a>
-      </li>
-    </ul>
+    </div>
+
   </footer>
 
 </body>
