@@ -297,12 +297,31 @@ footer {
 
   .me {
     border-top: solid black 1px;
+    border-radius: 20px;
     max-width: 45%;
   }
 
+  .article-1  {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 2% 0px 2%
+  }
+
   .p-1 {
-    padding: 20px;
-    text-align: justify;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+  }
+
+  .space {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 15% 0 15%;
+    background-color: lightblue;
+  }
+
+  li:nth-child(2) {
+    padding: 0 40px 0 40px;
   }
 
   .screenshot {
