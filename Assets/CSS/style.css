@@ -67,27 +67,6 @@ h1 {
   color: var(--black);
 }
 
-.article-links {
-  text-decoration: underline;
-  font-weight: 900;
-}
-
-.article-links:link {
-  color: var(--link);
-}
-
-.article-links:visited {
-  color: var(--link);
-}
-
-.article-links:hover {
-  color: red
-}
-
-.article-links:active {
-  color: orange
-}
-
 .me {
   max-width: 100%;
   border: solid black 1px;
@@ -213,7 +192,6 @@ footer {
 
   .screenshot {
     max-width: 100%;
-    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -329,6 +307,15 @@ footer {
     max-width: 100%;
   }
 
+  .screenshot:hover {
+    filter: blur(3px);
+    transition: .5s;
+  }
+
+  .link:hover {
+    box-shadow: 2px 2px 5px black;
+  }
+
   .ancestor {
     background-color: var(--link);
     padding: 0% 20% 0% 20%;
@@ -338,6 +325,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-top: 2%;
   }
 
   .adaptive {
