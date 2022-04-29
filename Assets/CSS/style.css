@@ -142,31 +142,29 @@ h1 {
 footer {
   background-color: var(--dark);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
   justify-content: center;
-  padding: 8px;
-  padding-bottom: 8px;
 }
 
 .footer-refs-1 {
   text-align: center;
-  margin-top: 13px;
-  flex: 50%;
+  margin-top: 4px;
+  flex: 100%;
 }
 
 .footer-refs-2 {
   text-align: center;
-  margin-top: 10px;
-  flex: 50%;
+  margin-top: 0px;
+  flex: 100%;
 }
 
 .git {
-  max-width: 50%;
+  max-width: 30%;
 }
 
 .in {
-  max-width: 25%;
+  max-width: 15%;
 }
 
 /* Tablet */
@@ -215,7 +213,7 @@ footer {
 
   .screenshot {
     max-width: 100%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -249,12 +247,30 @@ footer {
     width: 49%;
   }
 
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8% 0 8%;
+    max-height: 100px;
+  }
+
+  .footer-refs-1 {
+    text-align: center;
+    flex: 100%;
+  }
+  
+  .footer-refs-2 {
+    text-align: center;
+    flex: 100%;
+    margin-top: 4px;
+  }
+
   .git {
-    max-width: 20%;
+    max-width: 30%;
   }
   
   .in {
-    max-width: 8%;
+    max-width: 16%;
   }
 }
 
@@ -320,6 +336,24 @@ footer {
     margin: 0% 0px 2% 0px;
     border: solid lightblue 20px;
     width: 49%;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20% 0 20%;
+  }
+
+  .footer-refs-1 {
+    text-align: center;
+    margin-top: 4px;
+    flex: 100%;
+  }
+  
+  .footer-refs-2 {
+    text-align: center;
+    margin-top: 10px;
+    flex: 100%;
   }
 
   .git {
