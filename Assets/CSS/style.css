@@ -123,6 +123,22 @@ h1 {
   border: solid black 1px;
 }
 
+.adaptive {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.placeholder-img {
+  border: solid black 1px;
+  width: 100%;
+}
+
+.placeholder-2 {
+  border: solid black 1px;
+  width: 100%;
+}
+
 footer {
   background-color: var(--dark);
   display: flex;
@@ -198,10 +214,39 @@ footer {
   } 
 
   .screenshot {
-    max-width: 80%;
+    max-width: 100%;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .ancestor {
+    background-color: var(--link);
+    padding: 0% 10% 0% 10%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .adaptive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .placeholder-img {
+    margin: 2% 0px 2% 0px; /* Top, Right, Bottom, Left */
+    border: solid lightblue 20px;
+    width: 49%;
+  }
+
+  .placeholder-2 {
+    margin: 0% 0px 2% 0px;
+    border: solid lightblue 20px;
+    width: 49%;
   }
 
   .git {
@@ -248,32 +293,33 @@ footer {
     max-width: 100%;
   }
 
+  .ancestor {
+    background-color: var(--link);
+    padding: 0% 20% 0% 20%;
+  }
+
   .column {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .row {
+  .adaptive {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
   .placeholder-img {
-    margin: 2% 0px 2% 0px;
+    margin: 2% 0px 2% 0px; /* Top, Right, Bottom, Left */
     border: solid lightblue 20px;
     width: 49%;
   }
 
   .placeholder-2 {
-    margin: 2% 0px 2% 0px;  /* Top Right Bottom Left */
+    margin: 0% 0px 2% 0px;
     border: solid lightblue 20px;
     width: 49%;
-  }
-
-  .ancestor {
-    background-color: var(--link);
-    padding: 0% 20% 0% 20%;
   }
 
   .git {
