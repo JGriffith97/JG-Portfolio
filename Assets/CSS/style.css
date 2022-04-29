@@ -244,6 +244,7 @@ footer {
   }
 
   .screenshot {
+    border: solid lightblue 20px;
     max-width: 100%;
   }
 
