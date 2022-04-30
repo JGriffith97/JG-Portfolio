@@ -307,7 +307,8 @@ footer {
 
   .screenshot:hover {
     filter: blur(3px);
-    transition: .5s;
+    transition: ease-in-out .2s;
+    box-shadow: 2px 2px 5px black;
   }
 
   .link-1 {
@@ -336,6 +337,8 @@ footer {
   .link-3:hover,
   .link-4:hover {
     box-shadow: 2px 2px 5px black;
+    filter: blur(3px);
+    transition: ease-in-out .2s;
   }
 
   .ancestor {
