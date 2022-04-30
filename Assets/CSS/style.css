@@ -462,7 +462,7 @@ footer {
     margin: 0 10% 20px 10%
   }
 
-  .placeholder-1 { /* Top, Right, Bottom, Left */
+  .placeholder-1 {
     border: solid lightblue 20px;
     width: 100%;
     vertical-align: bottom;
