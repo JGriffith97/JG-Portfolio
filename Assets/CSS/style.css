@@ -3,7 +3,7 @@
   --white: white;
   --black: black;
   --center: center;
-  --link: cornflowerblue;
+  --bg2: cornflowerblue;
   --border: solid black 1px;
   --none: none;
 }
@@ -108,7 +108,7 @@ h1 {
   margin: 0px;
 }
 
-.placeholder-img {
+.placeholder-1 {
   border: solid black 1px;
   width: 100%;
 }
@@ -197,7 +197,7 @@ footer {
   }
 
   .ancestor {
-    background-color: var(--link);
+    background-color: var(--bg2);
     padding: 0% 10% 0% 10%;
   }
 
@@ -213,14 +213,12 @@ footer {
     justify-content: space-between;
   }
 
-  .placeholder-img {
-    margin: 2% 0px 2% 0px; /* Top, Right, Bottom, Left */
+  .placeholder-1 { /* Top, Right, Bottom, Left */
     border: solid lightblue 20px;
     width: 49%;
   }
 
   .placeholder-2 {
-    margin: 0% 0px 2% 0px;
     border: solid lightblue 20px;
     width: 49%;
   }
@@ -312,12 +310,36 @@ footer {
     transition: .5s;
   }
 
-  .link:hover {
+  .link-1 {
+    margin: 10px 5px 0 0;
+    width: 50%;
+  }
+
+  .link-2 {
+    margin: 10px 0 0 5px;
+    width: 50%;
+  }
+
+  .link-3 {
+    margin: 10px 5px 0 0;
+    width: 50%;
+  }
+
+  .link-4 {
+    margin: 10px 0 0px 5px;
+    width: 50%;
+  }
+
+  .link-main:hover,
+  .link-1:hover,
+  .link-2:hover,
+  .link-3:hover,
+  .link-4:hover {
     box-shadow: 2px 2px 5px black;
   }
 
   .ancestor {
-    background-color: var(--link);
+    background-color: var(--bg2);
     padding: 0% 20% 0% 20%;
   }
 
@@ -334,16 +356,23 @@ footer {
     justify-content: space-between;
   }
 
-  .placeholder-img {
-    margin: 2% 0px 2% 0px; /* Top, Right, Bottom, Left */
+  .adaptive-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .placeholder-1 { /* Top, Right, Bottom, Left */
     border: solid lightblue 20px;
-    width: 49%;
+    width: 100%;
+    vertical-align: bottom;
   }
 
   .placeholder-2 {
-    margin: 0% 0px 2% 0px;
     border: solid lightblue 20px;
-    width: 49%;
+    width: 100%;
+    vertical-align: bottom;
   }
 
   footer {
