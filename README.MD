@@ -4,6 +4,6 @@
 
 Screenshot: ![Site Screenshot](./Site-Screenshot.png)
 
-Open main code file: ![Portfolio](./Portfolio.html)
+Open main code file: [Portfolio](./Portfolio.html)
 
 Live site: https://jgriffith97.github.io/Module-2-Challenge/
