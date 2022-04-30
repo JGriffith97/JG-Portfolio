@@ -94,6 +94,20 @@ h1 {
 .p-1 {
   font-size: 20px;
   padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 15px 0;
+  background-color: lightblue;
+  justify-content: center;
+}
+
+li:nth-child(2) {
+  padding: 0 40px 0 40px;
 }
 
 .screenshot {
@@ -111,11 +125,13 @@ h1 {
 .placeholder-1 {
   border: solid black 1px;
   width: 100%;
+  vertical-align: bottom;
 }
 
 .placeholder-2 {
   border: solid black 1px;
   width: 100%;
+  vertical-align: bottom;
 }
 
 footer {
@@ -187,7 +203,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 15% 20px 15%;
+    padding: 20px 10% 20px 10%;
     background-color: lightblue;
   }
 
@@ -246,6 +262,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 20px;
   }
 
   .adaptive {
@@ -258,16 +275,19 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   .placeholder-1 { /* Top, Right, Bottom, Left */
     border: solid lightblue 20px;
     width: 100%;
+    vertical-align: bottom;
   }
 
   .placeholder-2 {
     border: solid lightblue 20px;
     width: 100%;
+    vertical-align: bottom;
   }
 
   footer {
@@ -286,7 +306,7 @@ footer {
   .footer-refs-2 {
     text-align: center;
     flex: 100%;
-    margin-top: 1%;
+    margin-top: 4px;
   }
 
   .git {
@@ -339,7 +359,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 15% 20px 15%;
+    padding: 0px 15% 20px 15%;
     background-color: lightblue;
   }
 
@@ -390,14 +410,13 @@ footer {
 
   .ancestor {
     background-color: var(--bg2);
-    padding: 0% 20% 0% 20%;
+    padding: 0% 15% 0% 15%;
   }
 
   .column {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 2%;
   }
 
   .adaptive {
@@ -428,7 +447,7 @@ footer {
   footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 20% 0 20%;
+    padding: 0 15% 0 15%;
   }
 
   .footer-refs-1 {
@@ -439,7 +458,7 @@ footer {
   
   .footer-refs-2 {
     text-align: center;
-    margin-top: 1.2%;
+    margin-top: 1.0%;
     flex: 100%;
   }
 
