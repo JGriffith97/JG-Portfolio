@@ -2,7 +2,7 @@
 
 ## The goal of this assignment was to make a responsive personal portfolio page from the ground up
 
-Screenshot: ![Site Screenshot](./Site-Screenshot.png)
+Screenshot: ![Site Screenshot](./Assets/Images/Site-Screenshot.png)
 
 Open main code file: [Portfolio](./index.html)
 
