@@ -84,14 +84,33 @@ h1 {
   position: relative;
 }
 
-.text-block {
+.text-block-main {
   position: absolute;
   background-color: lightblue;
   color: var(--black);
-  padding: 5px 5px 5px 30px;
+  padding: 5px 5px 5px 5px;
   bottom: 0px;
   z-index: 1;
-  text-align: right;
+  text-align: left;
+  border-right: solid cornflowerblue 10px;
+}
+
+.sub-project-1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-right: 0.5%;
+  position: relative;
+}
+
+.text-block-sub1 {
+  position: absolute;
+  background-color: lightblue;
+  color: var(--black);
+  padding: 5px 5px 5px 5px;
+  bottom: 0%;
+  z-index: 1;
+  text-align: left;
   border-right: solid cornflowerblue 10px;
 }
 
@@ -120,19 +139,7 @@ li:nth-child(2) {
   border: solid black 1px;
 }
 
-.adaptive {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-}
-
-.placeholder-1 {
-  border: solid black 1px;
-  width: 100%;
-  vertical-align: bottom;
-}
-
-.placeholder-2 {
+.sub-project-img {
   border: solid black 1px;
   width: 100%;
   vertical-align: bottom;
@@ -166,7 +173,15 @@ footer {
   max-width: 15%;
 }
 
-/* Tablet */
+.sub-project-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Tablet --- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
 
   .flex-container {
@@ -227,47 +242,40 @@ footer {
     box-shadow: 2px 2px 5px black;
   }
 
-  .text-block {
+  .text-block-main {
     position: absolute;
     background-color: lightblue;
     color: var(--black);
-    bottom: 99px;
-    left: 5%;
-    padding: 5px 5px 5px 30px;
+    bottom: 0%;
+    left: 0%;
+    padding: 5px 5px 5px 20px;
     z-index: 1;
-    text-align: right;
+    text-align: left;
     border-right: solid cornflowerblue 10px;
   }
 
-  .link-main {
-    margin: 0 5% 0 5%;
+  .text-block-sub1 {
+    position: absolute;
+    background-color: lightblue;
+    color: var(--black);
+    padding: 5px 5px 5px 20px;
+    bottom: 0%;
+    z-index: 1;
+    text-align: left;
+    border-right: solid cornflowerblue 10px;
   }
 
-  .link-1 {
-    margin: 10px 5px 0 5%;
-    width: 50%;
+  .link-left {
+    width: 100%;
   }
 
-  .link-2 {
-    margin: 10px 5% 0 5px;
-    width: 50%;
-  }
-
-  .link-3 {
-    margin: 10px 5px 0 5%;
-    width: 50%;
-  }
-
-  .link-4 {
-    margin: 10px 5% 0px 5px;
-    width: 50%;
+  .link-right {
+    width: 100%;
   }
 
   .link-main:hover,
-  .link-1:hover,
-  .link-2:hover,
-  .link-3:hover,
-  .link-4:hover {
+  .link-left:hover,
+  .link-right:hover {
     box-shadow: 2px 2px 5px black;
     transition: ease-in-out .2s;
   }
@@ -277,31 +285,54 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1%;
   }
 
   .adaptive {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1% 0 1% 0;
+    width: 100%;
   }
 
   .adaptive-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
+    width: 100%;
   }
 
-  .placeholder-1 { /* Top, Right, Bottom, Left */
-    border: solid lightblue 20px;
+  .sub-project-1 {
+    display: flex;
     width: 100%;
-    vertical-align: bottom;
+    height: 100%;
+    margin-right: 0.5%;
+    position: relative
   }
 
-  .placeholder-2 {
+  .sub-project-2 {
+    display: flex;
+    width: 100%;
+    margin-left: 0.5%;
+  }
+
+  .sub-project-3 {
+    display: flex;
+    width: 100%;
+    margin-right: 0.5%;
+  }
+
+  .sub-project-4 {
+    display: flex;
+    width: 100%;
+    margin-left: 0.5%;
+  }
+
+  .sub-project-img {
     border: solid lightblue 20px;
     width: 100%;
+    height: 100%;
     vertical-align: bottom;
   }
 
@@ -310,6 +341,7 @@ footer {
     justify-content: space-between;
     padding: 0 8% 0 8%;
     max-height: 100px;
+    margin-top: 1%;
   }
 
   .footer-refs-1 {
@@ -333,7 +365,8 @@ footer {
   }
 }
 
-/* Desktop */
+/* --- Desktop --- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 992px) {
 
   .flex-container {
@@ -392,39 +425,17 @@ footer {
     box-shadow: 2px 2px 5px black;
   }
 
-  .link-main {
-    margin: 0 10% 0 10%;
+  .link-left {
+    width: 100%;
   }
 
-  .link-1 {
-    margin: 10px 5px 0 0;
-    width: 50%;
+  .link-right {
+    width: 100%;
   }
-
-  .link-2 {
-    margin: 10px 0 0 5px;
-    width: 50%;
-  }
-
-  .link-3 {
-    margin: 10px 5px 0 0;
-    width: 50%;
-  }
-
-  .link-4 {
-    margin: 10px 0 0px 5px;
-    width: 50%;
-  }
-
-.ancestor {
-  margin: 0 10% 0 10%;
-}
 
   .link-main:hover,
-  .link-1:hover,
-  .link-2:hover,
-  .link-3:hover,
-  .link-4:hover {
+  .link-left:hover,
+  .link-right:hover {
     box-shadow: 2px 2px 5px black;
     transition: ease-in-out .2s;
   }
@@ -436,15 +447,26 @@ footer {
     width: 100%;
   }
 
-  .text-block {
+  .text-block-main {
     position: absolute;
     background-color: lightblue;
     color: var(--black);
-    bottom: 163px;
-    left: 10%;
-    padding: 5px 5px 5px 30px;
+    bottom: 0%;
+    left: 0;
+    padding: 5px 5px 5px 20px;
     z-index: 1;
-    text-align: right;
+    text-align: left;
+    border-right: solid cornflowerblue 10px;
+  }
+
+  .text-block-sub1 {
+    position: absolute;
+    background-color: lightblue;
+    color: var(--black);
+    padding: 5px 5px 5px 20px;
+    bottom: 0%;
+    z-index: 1;
+    text-align: left;
     border-right: solid cornflowerblue 10px;
   }
 
@@ -452,25 +474,51 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10% 0 10%;
+    margin: 1% 0 1% 0;
+    width: 100%;
   }
 
   .adaptive-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10% 20px 10%
+    width: 100%;
   }
 
-  .placeholder-1 {
-    border: solid lightblue 20px;
-    width: 100%;
-    vertical-align: bottom;
+  .borders {
+    padding: 0 10% 0 10%;
   }
 
-  .placeholder-2 {
+  .sub-project-1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-right: 0.5%;
+    position: relative
+  }
+
+  .sub-project-2 {
+    display: flex;
+    width: 100%;
+    margin-left: 0.5%;
+  }
+
+  .sub-project-3 {
+    display: flex;
+    width: 100%;
+    margin-right: 0.5%;
+  }
+
+  .sub-project-4 {
+    display: flex;
+    width: 100%;
+    margin-left: 0.5%;
+  }
+
+  .sub-project-img {
     border: solid lightblue 20px;
     width: 100%;
+    height: 100%;
     vertical-align: bottom;
   }
 
